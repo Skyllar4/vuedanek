@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Авторизация | Webdevkin</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <h1>Вход в админку</h1>
+                    <br />
+                    <form id="form">
+                        <fieldset>
+                            <legend>Авторизуйтесь</legend>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <label for="user">Логин</label>
+                                    <input type="text" id="user" name="user" placeholder="Имя пользователя"/>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <label for="password">Пароль</label>
+                                    <input type="password" id="password" name="password" placeholder="Пароль"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <mark id="error" class="inline-block secondary hidden" style="margin: 10px 0 10px 8px;">Текст ошибки</mark>
+                            </div>
+                            <div class="row">
+                                <button class="primary">Войти в админку</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./src/login.js"></script>
+    </body>
+</html>
